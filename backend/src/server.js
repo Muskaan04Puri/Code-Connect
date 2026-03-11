@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors({ origin: ENV.CLIENT_URL, credentials: true })); // credentials:true meaning?? => server allows a browser to include cookies on request
 app.use("/api/inngest", serve({ client: inngest, functions }));
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
     res.status(200).json({ msg: "success from backend" });
 });
 
