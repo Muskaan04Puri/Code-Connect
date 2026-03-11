@@ -1,6 +1,9 @@
 {
   "name": "code-connect",
   "version": "1.0.0",
+  "engines": {
+    "node": "24.x"
+  },
   "description": "Remote Interview Platform",
   "main": "index.js",
   "type": "module",
